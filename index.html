@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot Roadmap 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --card-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-main);
+            letter-spacing: -0.025em;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Layout & Cards */
+        .container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            color: var(--text-muted);
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.75rem;
+            }
+            .card {
+                padding: 1.25rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Spring Boot Roadmap 2026</h1>
+
+    <div class="container">
+        <section class="card">
+            <h2>Core Concepts</h2>
+            <ul>
+                <li>IoC & DI</li>
+                <li>Beans & Annotations</li>
+                <li>Application Context</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Building APIs</h2>
+            <ul>
+                <li>REST Controllers</li>
+                <li>Request/Response Handling</li>
+                <li>DTO + Validation</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Exception Handling</h2>
+            <ul>
+                <li>@ControllerAdvice</li>
+                <li>Custom Exceptions</li>
+                <li>Clean Error Responses</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Database Layer</h2>
+            <ul>
+                <li>Jakarta Persistence (JPA)</li>
+                <li>Entity Relationships</li>
+                <li>Transactions</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Security</h2>
+            <ul>
+                <li>Spring Security</li>
+                <li>JWT Authentication</li>
+                <li>Role-Based Access</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Testing</h2>
+            <ul>
+                <li>Unit Testing</li>
+                <li>Integration Testing</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Advanced Backend</h2>
+            <ul>
+                <li>Caching (Redis)</li>
+                <li>Async Processing</li>
+                <li>Logging & Monitoring</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Microservices</h2>
+            <ul>
+                <li>Service Discovery</li>
+                <li>Feign Clients</li>
+                <li>Config Server</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>DevOps & Deployment</h2>
+            <ul>
+                <li>Docker</li>
+                <li>CI/CD</li>
+                <li>Cloud Deployment</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Continuous Growth</h2>
+            <ul>
+                <li>Build Projects</li>
+                <li>Open Source</li>
+                <li>Stay Updated</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
